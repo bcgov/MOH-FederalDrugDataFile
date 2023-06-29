@@ -18,7 +18,13 @@ jobs:
         
       - name: Commit Federal Drug Files
         run: |
-          git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
-          git config --global user.email "drugmirror@users.noreply.github.com"
-          git commit -a -m "${{ env.CI_COMMIT_MESSAGE }}"
-          git push
+          if [ -z "$(git diff --name-only)" ];
+          then
+            echo "No new files to commit"
+          else
+            echo "Drug files have been updated"
+            git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
+            git config --global user.email "drugmirror@users.noreply.github.com"
+            git commit -a -m "${{ env.CI_COMMIT_MESSAGE }}"
+            git push
+          fi
