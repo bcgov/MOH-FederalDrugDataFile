@@ -2,7 +2,7 @@ name: Fetch Federal Drug Files
 on:
   workflow_dispatch:
   schedule:
-  - cron: "30 8 * * 1-5"
+  - cron: "30 8 5 * *"
 
 jobs:
   build:
