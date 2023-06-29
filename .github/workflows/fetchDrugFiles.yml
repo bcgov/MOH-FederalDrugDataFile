@@ -1,0 +1,23 @@
+name: Fetch Federal Drug Files
+on:
+  schedule:
+  - cron: "30 8 * * 1-5"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env: 
+      CI_COMMIT_MESSAGE: Monthly Get Current Drug Files
+      CI_COMMIT_AUTHOR: ${{ github.event.repository.name }} MirrorJob
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Get Federal Drug Files
+        run: ./getDrugFiles.sh
+        
+      - name: Commit Federal Drug Files
+        run: |
+          git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
+          git config --global user.email "drugmirror@users.noreply.github.com"
+          git commit -a -m "${{ env.CI_COMMIT_MESSAGE }}"
+          git push
