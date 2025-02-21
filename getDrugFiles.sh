@@ -4,4 +4,4 @@ wget -O allfiles_ap.zip https://www.canada.ca/content/dam/hc-sc/documents/servic
 wget -O allfiles.zip https://www.canada.ca/content/dam/hc-sc/documents/services/drug-product-database/allfiles.zip
 wget -O allfiles_ia.zip https://www.canada.ca/content/dam/hc-sc/documents/services/drug-product-database/allfiles_ia.zip
 wget -O allfiles_dr.zip https://www.canada.ca/content/dam/hc-sc/documents/services/drug-product-database/allfiles_dr.zip
-wget -O pddf.zip https://www.health.gov.bc.ca/pharmacare/outgoing/pddf.zip
+wget --no-check-certificate -O pddf.zip https://www.health.gov.bc.ca/pharmacare/outgoing/pddf.zip
