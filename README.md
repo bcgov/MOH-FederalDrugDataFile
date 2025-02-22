@@ -4,7 +4,8 @@ Contains copies of the [Federal Drug Product DB](https://www.canada.ca/en/health
 
 ## Files
 
-Active Drug File: https://www.canada.ca/content/dam/hc-sc/documents/services/drug-product-database/allfiles_ap.zip"
-Marketed Drug File: https://www.canada.ca/content/dam/hc-sc/documents/services/drug-product-database/allfiles.zip
-Cancelled Drug File: https://www.canada.ca/content/dam/hc-sc/documents/services/drug-product-database/allfiles_ia.zip
-Dorman Drug File: https://www.canada.ca/content/dam/hc-sc/documents/services/drug-product-database/allfiles_dr.zip
+- **Active Drug File:** [Download](https://www.canada.ca/content/dam/hc-sc/documents/services/drug-product-database/allfiles_ap.zip)
+- **Marketed Drug File:** [Download](https://www.canada.ca/content/dam/hc-sc/documents/services/drug-product-database/allfiles.zip)
+- **Cancelled Drug File:** [Download](https://www.canada.ca/content/dam/hc-sc/documents/services/drug-product-database/allfiles_ia.zip)
+- **Dorman Drug File:** [Download](https://www.canada.ca/content/dam/hc-sc/documents/services/drug-product-database/allfiles_dr.zip)
+- **Provincial Drug File:** [Download](https://www.health.gov.bc.ca/pharmacare/outgoing/pddf.zip)
